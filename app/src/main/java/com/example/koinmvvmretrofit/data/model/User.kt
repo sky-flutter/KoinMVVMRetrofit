@@ -1,3 +1,3 @@
-package com.example.daggermvvmretrofit.data.model
+package com.example.koinmvvmretrofit.data.model
 
 class User(val login: String)

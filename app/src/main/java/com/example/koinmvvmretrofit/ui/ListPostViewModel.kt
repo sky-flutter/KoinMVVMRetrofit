@@ -1,10 +1,10 @@
 package com.example.koinmvvmretrofit.ui
 
-import android.util.Log
+import android.util.Patterns
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.daggermvvmretrofit.data.model.Repo
+import com.example.koinmvvmretrofit.data.model.Repo
 import com.example.koinmvvmretrofit.data.rest.RepoService
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -62,4 +62,13 @@ class ListPostViewModel(private val repoService: RepoService) : ViewModel() {
     }
 
 
+    fun checkEmail(strEmail: String): Boolean {
+        return if (strEmail.isEmpty()) {
+            false
+        } else Patterns.EMAIL_ADDRESS.matcher(strEmail).matches()
+    }
+
+    fun checkPassword(strPassword: String): Boolean {
+        return strPassword.isNotEmpty()
+    }
 }

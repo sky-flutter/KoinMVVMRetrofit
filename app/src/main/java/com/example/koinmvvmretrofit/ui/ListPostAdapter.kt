@@ -5,7 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.daggermvvmretrofit.data.model.Repo
+import com.example.koinmvvmretrofit.data.model.Repo
 import com.example.koinmvvmretrofit.BR
 import com.example.koinmvvmretrofit.R
 import com.example.koinmvvmretrofit.databinding.ItemListPostBinding

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.daggermvvmretrofit.data.model.Repo
+import com.example.koinmvvmretrofit.data.model.Repo
 import com.example.koinmvvmretrofit.BR
 import com.example.koinmvvmretrofit.R
 import com.example.koinmvvmretrofit.databinding.ActivityMainBinding
